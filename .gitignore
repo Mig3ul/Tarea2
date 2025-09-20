@@ -9,3 +9,4 @@ dist/
 # Archivos de compilación
 *.class
 *.jar
+/target/
