@@ -1,4 +1,4 @@
-package com.mycompany.proyectojava;
+package com.mycompany.proyectil;
 
 public abstract class Proyectil {
 
