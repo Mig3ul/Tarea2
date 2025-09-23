@@ -67,6 +67,21 @@ public abstract class Proyectil {
         }
     }
 
+    public void setMasa(double masa) { this.masa = masa; }
+    public void setV0(double v0) { this.v0 = v0; }
+    public void setAnguloTheta(double anguloTheta) { this.anguloTheta = anguloTheta; }
+    public void setAnguloPhi(double anguloPhi) { this.anguloPhi = anguloPhi; }
+    public void setCosTheta(double cosTheta) { this.cosTheta = cosTheta; }
+    public void setCosPhi(double cosPhi) { this.cosPhi = cosPhi; }
+    public void setSinTheta(double sinTheta) { this.sinTheta = sinTheta; }
+    public void setSinPhi(double sinPhi) { this.sinPhi = sinPhi; }
+    public void setV0X(double v0X) { this.v0X = v0X; }
+    public void setV0Y(double v0Y) { this.v0Y = v0Y; }
+    public void setV0Z(double v0Z) { this.v0Z = v0Z; }
+    public void setX0(double[] x0) { this.x0 = x0; }
+    public void setY0(double[] y0) { this.y0 = y0; }
+    public void setZ0(double[] z0) { this.z0 = z0; }
+
 
 
 }
