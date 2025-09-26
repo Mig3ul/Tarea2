@@ -9,28 +9,8 @@ public abstract class Proyectil {
     protected double v0X, v0Y, v0Z; 
     protected double x0, y0, z0; 
     protected static final double GRAVEDAD = 9.8; 
-    
-    public Proyectil() {
-        this.masa = 0.0;
-        this.v0 = 0.0;
-        this.anguloTheta = 0.0;
-        this.anguloPhi = 0.0;
-        this.x0 = 0.0;
-        this.y0 = 0.0;
-        this.z0 = 0.0;
 
-        this.cosTheta = Math.cos(Math.toRadians(0.0)); 
-        this.sinTheta = Math.sin(Math.toRadians(0.0));
-        this.cosPhi = Math.cos(Math.toRadians(0.0));   
-        this.sinPhi = Math.sin(Math.toRadians(0.0));   
-        
-        this.v0X = 0.0;
-        this.v0Y = 0.0;
-        this.v0Z = 0.0;
-    }
-
-    public Proyectil(double masa, double v0, double anguloTheta, double anguloPhi, 
-                    double x0, double y0, double z0) {
+    public Proyectil(double masa, double v0, double anguloTheta, double anguloPhi, double x0, double y0, double z0) {
         this.masa = masa;
         this.v0 = v0;
         this.anguloTheta = anguloTheta; 
@@ -52,7 +32,6 @@ public abstract class Proyectil {
     }
 
 
-
     //getters
     public double getMasa() { return masa; }
     public double getV0() { return v0; }
@@ -69,7 +48,6 @@ public abstract class Proyectil {
     public double getY0() { return y0; }
     public double getZ0() { return z0; }
     public static double getGravedad() { return GRAVEDAD; }
-    
 
 
     //setters
@@ -105,9 +83,6 @@ public abstract class Proyectil {
     public void setZ0(double z0) { this.z0 = z0; }
 
 
-
-
-
     public void calculoVelocidadesIniciales() {
         this.v0X = v0 * cosTheta * cosPhi;
         this.v0Y = v0 * cosTheta * sinPhi;
@@ -125,9 +100,5 @@ public abstract class Proyectil {
             posZ[i] = calcularPosicionZ(tiempos[i]);
         }
     }
-
-
-    
-
 
 }
