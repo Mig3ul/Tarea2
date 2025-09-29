@@ -17,7 +17,7 @@ public class ProyectilSinResistenciaAlAire extends Proyectil{
     }
     public double alturaMaximaAlcanzada(){
         // zMax = (v0^2) (sin^2(theta)) / 2g
-        return ((v0*v0)*(sinTheta*sinTheta))/2*GRAVEDAD;
+        return ((v0*v0)*(sinTheta*sinTheta))/(2*GRAVEDAD);
     }
     public double tiempoTotalDeVuelo(){
         //tTotal = (2v0 sin(theta))/g
